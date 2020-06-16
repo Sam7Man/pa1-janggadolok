@@ -1,0 +1,74 @@
+@import 'root.css';
+
+.footer-dark {
+    padding: 50px 0;
+    color: #f0f9ff;
+    background-color: var(--color-balck);
+}
+
+.footer {
+    display: flex;
+}
+
+.footer-dep{
+    padding: 10px;
+    position: relative;
+}
+.footer-dep .title-footer{
+    font-size: 25px;
+    font-family: bolds;
+    font-style: italic;
+}
+.about-us{
+    width: 60%;
+}
+.text-about{
+    font-family: 'livvic-light';
+    font-size: 13px;
+    text-align: justify;
+}
+
+.contact-us{
+    width: 20%;
+}
+
+.follow-us{
+    width: 20%;  
+}
+
+.footer-down{
+    padding-left: 20px;
+}
+.text-footer{
+    font-family: 'bolds';
+}
+@media(max-width:768px){
+    .footer{
+        display: block;
+    }
+    .about-us{
+        width: 100%;
+    }
+    .contact-us{
+        width: 100%;
+    }
+    
+    .follow-us{
+        width: 100%;  
+    }
+}
+.footer .title-footer{
+    font-family: 'Lexend Deca';
+    font-size: 30px;
+    font-style: normal;
+}
+
+li{
+    list-style: none;
+    font-family: 'livvic';
+    font-size: 14px;
+}
+.list-sosmed{
+    left: -15px;
+    position: absolute;
+}

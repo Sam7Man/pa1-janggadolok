@@ -1,0 +1,608 @@
+@import 'footer.css';
+@import 'navbar.css';
+@import 'root.css';
+@import 'fonts.css';
+
+
+body{
+    overflow-x: hidden;
+}
+/* main */
+main {
+    padding-bottom: 50px;
+}
+
+/* main */
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    transform: translateY(-35%);
+    min-height: 665px;
+}
+
+@media (max-width: 768px) {
+
+    .carousel-item img {
+        min-width: 100%;
+        height: 600px;
+        transform: scale(1.2) translateY(-12%);
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .carousel-item img {
+        min-width: 100%;
+        height: 600px;
+        transform: scale(1.2) translateY(-12%);
+    }
+
+    .carousel-caption .container .headline {
+        text-align: left;
+        font-size: 4.8rem;
+    }
+
+}
+
+.carousel-caption {
+    text-align: center;
+    padding: 65px;
+    left: 0%;
+    top: 0;
+    height: 70%;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+}
+
+.carousel-caption .container .image-home {
+    width: 200px;
+    opacity: 0.6;
+}
+
+.carousel-caption .container .headline {
+    text-align: left;
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--Lexend);
+    opacity: 0.6;
+}
+
+.carousel-caption .container {
+    margin-top: 75px;
+}
+
+.carousel-caption .container .headlineParag {
+    font-family: 'livvic-light';
+    font-size: 10px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption .container .headline {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+
+    .carousel-caption .container {
+        margin-top: 120px;
+    }
+
+    .carousel-caption .container .headlineParag {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel-caption .container .headline {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+
+    .carousel-caption .container {
+        margin-top: 120px;
+    }
+
+    .carousel-caption .container .headlineParag {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .carousel-caption .container .headline {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 30px;
+        opacity: 0.7;
+    }
+
+    .carousel-caption .container {
+        margin-top: 85px;
+    }
+
+    .carousel-caption .container .headlineParag {
+        margin-top: 15px;
+    }
+}
+
+.profile-village {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    border: none;
+    box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.075);
+    border-radius: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+@media(max-width: 768px) {
+    .profile-village {
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 20px;
+        padding-top: 20px;
+
+    }
+}
+
+.title-profile {
+    font-family: 'Livvic-Bold';
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.profile-village .profile {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+.profile-village .profile .profile-caption .title-child {
+    font-family: 'josefin-semibold';
+
+}
+
+.profile-village .profile .profile-caption .description {
+    font-family: 'Livvic', sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+
+.news {
+    padding: 10px;
+    margin-top: 50px;
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.news .title-profile {
+    text-align: center;
+}
+
+.news .box-news {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap: 40px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.news .box-news .news-label {
+    border: 1px solid rgb(218, 218, 218);
+    height: 250px;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+.news .news-label:hover {
+    height: 300px;
+}
+
+.news .box-news .news-label img {
+    width: 100%;
+}
+
+.news .news-label:hover .title-news {
+    margin-top: -50px;
+    color: white;
+}
+
+.news .news-label:hover .text-news {
+    margin-top: -45px;
+}
+
+.news .news-label:hover .date {
+    opacity: 0;
+}
+
+.news .box-news .news-label .news-caption {
+    padding: 10px;
+}
+
+.news .title-news {
+    font-family: 'livvic';
+    font-size: 12px;
+    transition-property: margin-top, color;
+    transition-duration: 0.5s, 0.7s;
+}
+
+.news .date {
+    font-size: 1px;
+    color: rgba(211, 211, 211, 0.767);
+    font-family: 'livvic';
+    transition: opacity 0.5s;
+}
+
+.news .text-news {
+    margin-top: 30px;
+    font-family: 'livvic';
+    font-size: 8px;
+    transition: margin-top 1s;
+}
+
+.btns {
+    width: 85px;
+    padding-left: 11.5px;
+    padding-top: 10px;
+    padding-right: 11.5px;
+    padding-bottom: 10px;
+    font-size: 5px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+}
+
+.btns:before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index: -1;
+    border-radius: 100%;
+    transform: scale(1.4);
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: rgb(38, 175, 255);
+    transition: bottom 0.7s;
+}
+
+.btns a {
+    text-decoration: none;
+    transition: color 1.2s;
+}
+
+.btns:hover:before {
+    bottom: 0;
+}
+
+.btns:hover a {
+    color: white;
+}
+
+.search .input-search {
+    padding: 5px;
+    padding-left: 20px;
+    border: none;
+    font-size: 15px;
+    width: 300px;
+    border-radius: 25px;
+    color: rgb(39, 39, 39);
+    font-family: 'livvic-italic';
+    font-style: italic;
+    transition: width 1s;
+    outline: none;
+}
+
+.search .btn-search {
+    padding: 3px;
+    width: 50px;
+    border-radius: 10px;
+    background: rgb(77, 77, 255);
+    color: white;
+}
+
+@media(max-width: 768px) {
+    .search .input-search {
+        width: 200px;
+    }
+}
+
+.maps {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.maps .maps-image {
+    width: 100%;
+    height: 500px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.images-village {
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.images-village .title-image {
+    font-family: 'Livvic-Bold';
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.images {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 3fr));
+    gap: 30px;
+}
+
+@media screen and (max-width : 768px) {
+    .images {
+        width: 80%;
+    }
+}
+
+.box-images {
+    display: flex;
+    height: 150px;
+}
+
+.box-images img {
+    display: block;
+    width: 100%;
+    transition: 0.6s;
+}
+
+.box-images img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+
+.lightbox {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.479);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.open {
+    display: flex;
+}
+
+.lightbox .image-lightbox {
+    width: 100%;
+    height: 500px;
+    transition: all 2s;
+    left: 50%;
+    z-index: 9999;
+}
+
+.lightbox .lightbox-content {
+    position: relative;
+    width: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
+    justify-content: flex-end;
+}
+
+@media(max-width: 768px) {
+    .lightbox .lightbox-content {
+
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.lightbox .lightbox-caption {
+    color: white;
+    position: static;
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    font-size: 16px;
+    justify-content: space-between;
+}
+
+.lightbox .lightbox-close {
+    position: static;
+    z-index: 101;
+    width: 100%;
+    right: 0;
+    margin-right: 0;
+    float: right;
+    font-size: 30px;
+    color: white;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    cursor: grab;
+}
+
+.lightbox .lightbox-control {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lightbox .lightbox-control div {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-weight: bold;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.potensi-desa {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.potensi-desa .title-potensi-desa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.potensi-desa .title-potensi-desa p {
+    font-size: 25px;
+    font-family: 'Lexend Deca';
+}
+
+.box-potensi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: space-evenly;
+}
+
+.potensi {
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+}
+
+
+.image-potensi {
+    height: 400px;
+    overflow: hidden;
+}
+
+.image-potensi img {
+    width: 100%;
+    /* height: 400px; */
+}
+
+.image-potensi .sawah {
+    transform: scale(2) translateY(14%) translateX(10%);
+}
+
+.potensi .content-potensi {
+    position: absolute;
+    top: 30px;
+    z-index: 999;
+    font-size: 14px;
+    color: white;
+    padding: 20px;
+}
+
+.content-potensi span {
+    border-bottom: 4px solid white;
+}
+
+.content-potensi a {
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.content-potensi a:hover {
+    text-decoration: none;
+
+}
+
+.content-potensi .title-potensi-content {
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.potensi::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(36, 31, 31, 0.513);
+    z-index: 998;
+}
+
+.image-back {
+    position: absolute;
+    width: 500px;
+    left: -275px;
+    opacity: 0.5;
+    border-radius: 100%;
+}
+
+.image-back img {
+    width: 550px;
+    height: 550px;
+    border-radius: 100%;
+}
+.image-back-three {
+    position: absolute;
+    width: 500px;
+    top: 1200px;
+    left: -275px;
+    opacity: 0.5;
+    z-index: -100;
+    border-radius: 100%;
+}
+
+.image-back-three img {
+    width: 550px;
+    height: 550px;
+    border-radius: 100%;
+}
+
+.image-back-two {
+    position: absolute;
+    width: 500px;
+    right: -235px;
+    top: 800px;
+    opacity: 0.5;
+    z-index: -90;
+    border-radius: 100%;
+}
+
+.image-back-two img {
+    width: 550px;
+    height: 550px;
+    border-radius: 100%;
+}

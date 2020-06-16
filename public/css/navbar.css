@@ -1,0 +1,163 @@
+@import 'root.css';
+
+.navbar {
+    background: #191212;
+    transition: position 5s;
+}
+
+.backgroundDefault {
+    background: #343a40;
+    animation: nav 1s alternate;
+}
+
+@keyframes nav {
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 11%;
+    }
+}
+
+.navbar-brand {
+    font-size: 0.7rem;
+    padding: 8px;
+    font-family: var(--Lexend);
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    width: 150px;
+}
+
+.navbar-brand img {
+    width: 30%;
+}
+
+.navbar .navbar-nav .nav-item {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--light-black);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    position: relative;
+    height: 25px;
+}
+
+.navbar-toggler .navbar-toggler-icon .toggler {
+    border: 1px solid white;
+    display: block;
+    margin-top: 0.3rem;
+    color: white;
+}
+
+.collapse .navbar-nav {
+    display: flex;
+}
+
+.collapse .navbar-nav .nav-item .nav-link {
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.collapse {
+    display: block;
+}
+
+.navbar-tabs {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.navbar-tabs .search {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.navbar-tabs .search .icon {
+    padding: 10px;
+    height: 30px;
+}
+
+.navbar-tabs .search p {
+    padding: 10px;
+    color: white;
+    font-family: 'livvic-light';
+    font-size: 10px;
+}
+
+.navbar-tabs .navs {
+    width: 100%;
+}
+
+.navbar-tabs .navs .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.navAnimate {
+    animation: some 1.5s alternate;
+}
+
+@keyframes some {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.collapse .navbar-nav .nav-item .nav-link:hover {
+    background: var(--nav);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.collapse .navbar-nav .nav-item .nav-link.active {
+    font-size: 10px;
+    font-family: var(--Lexend);
+    background: var(--nav);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#login {
+    margin-left: 0;
+}
+
+#signup {
+    border: 2px solid;
+}
+
+.smoooth {
+    transition: all 2s;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand img {
+        width: 60%;
+    }
+
+    #login {
+        margin-left: 24px;
+    }
+
+    .collapse .navbar-nav .nav-item .nav-link {
+        font-size: 10px;
+        font-family: 'Lexend Deca', sans-serif;
+        margin-left: 30px;
+    }
+}
+
+/* 
+end navbar */

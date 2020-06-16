@@ -1,0 +1,59 @@
+:root {
+    --Snigle-font: "Sniglet", cursive;
+    --Rubik: "Rubik", cursive;
+    --bggradient: linear-gradient(to bottom, #2465dd, rgb(144, 85, 255));
+    --Patua: "Patua One", cursive;
+    --light-black: #2e2c2caf;
+    --light-gray: rgba(255, 255, 255, 0.9);
+    --sans: "Times new roman", cursive;
+    --lexend: "lexend", cursive;
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+    --jover: linear-gradient(90deg, #4d61e4 0%, #854fee 100%);
+    --nav: linear-gradient(90deg, #dadada 0%, #c8c8c8 100%);
+    --caption: linear-gradient(90deg, #4458dc 50%, #854fee 100%);
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    /* --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Josefin: 'Josefin', cursive;
+    --Lexend: 'Lexend Deca Regular', cursive;
+    --Livvic: 'Livvic', cursive;
+    --king-lionel: 'King Lionel', cursive;
+    --sketch: '!sketchytimes', cursive; */
+    --color-balck: rgb(48, 47, 47);
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: rgb(255, 255, 255);
+}
+.fontKu{
+    font-family: var(--Abel);
+}

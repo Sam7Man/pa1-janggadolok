@@ -1,0 +1,145 @@
+@import 'fonts.css';
+
+.article{
+    width: 65%;
+    padding: 20px;
+    box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.082);
+}
+
+.page{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.article-Others{
+    width: 25%;
+}
+@media(max-width:768px){
+    .page{
+        display: block;
+    }
+    .article{
+        width: 100%;
+    }
+    .article-Others{
+        width: 100%;
+    }
+}
+.article .title-article{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.article .admin-article{
+    font-size: 10px;
+    font-weight: 100;
+}
+.gambar{
+    width: 100%;
+}
+.gambar img{
+    width: 100%;
+}
+.article .content{
+    font-family: livvic;
+    font-size: 14px;
+}
+
+.title-others {
+    font-family: 'Lexend Deca';
+    text-align: center;
+}
+
+.item-others {
+    display: grid;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 35px;
+}
+
+.content-item {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid; */
+}
+
+.content-item div {
+    /* border: 2px solid; */
+}
+
+.others-content {
+    width: 65%;
+    font-size: 10px;
+    text-align: justify;
+}
+.content-item .image {
+    width: 30%;
+}
+
+.content-item .image img {
+    width: 100%;
+}
+
+.comment{
+    display: flex;
+    width: 100%;
+    /* border: 2px solid; */
+}
+.list-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'livvic';
+}
+.input-form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.labels{
+    font-size: 12px;
+}
+.input-type{
+    border: none;
+    border-bottom: 1px solid;
+    font-size: 12px;
+}
+.input-type:focus,
+.input-type:active{
+    outline: none;
+}
+textarea{
+    font-size: 12px;
+}
+.comments-area:focus{
+    outline: none;
+}
+.form{
+    width: 100%;
+    padding: 75px;
+    padding-left: 0;
+    /* border: 2px solid; */
+}
+
+@media(max-width: 768px){
+    .comment{
+        display: grid;
+    }
+    .form{
+        width: 100%;
+    }
+    .image-comment{
+        width: 100%;
+    }
+}
+
+.btn-comment{
+    width: 100px;
+    background: linear-gradient(90deg, rgb(53, 231, 255), rgb(38, 255, 103));
+    border: none;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    color: white;
+}
